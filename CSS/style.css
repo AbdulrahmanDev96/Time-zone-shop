@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Start NavBar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  padding: 15px 30px;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(5, 5, 5);
+  transition: all 0.6s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: rgb(255, 0, 0, 0.587);
+  font-size: 18px;
+}
+/* End NavBar */
+/* -------------------------------- */
+
+/* Start Header */
+header {
+  background-color: rgb(240, 240, 242);
+  margin-top: 50px;
+}
+
+header .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .row h1 {
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: rgb(11, 28, 57);
+}
+
+header .container .row p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgb(33, 32, 37);
+  padding: 30px 0;
+}
+
+header .container .row a {
+  padding: 15px 29px;
+  background: rgb(74, 74, 75);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+header .container .row a {
+  background: linear-gradient(to left, #4a4a4a, #4a4a4a) no-repeat;
+  background-size: 0%;
+  background-color: #ff2020;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+header .container .row a:hover {
+  background-size: 100%;
+}
+/* End Header */
+/* -------------------------------- */
+
+/* Start newArrivals */
+.newArrivals {
+  padding: 40px 0px; /*top right bottom left*/
+}
+
+.newArrivals .row h2 {
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0 0 5px;
+}
+
+.newArrivals .boxes .box {
+  margin-bottom: 30px;
+}
+
+.newArrivals .boxes .box .img-zoom {
+  overflow: hidden;
+}
+
+.newArrivals .boxes .box .img-zoom img {
+  width: 100%;
+  transition: transform 0.7s ease;
+}
+
+.newArrivals .boxes .box .img-zoom img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.newArrivals .boxes .box .text {
+  text-align: center;
+}
+
+.newArrivals .boxes .box a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.newArrivals .boxes .box p {
+  color: #ff2020;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0px 20px 0px;
+}
+/* End newArrivals */
+/* -------------------------------- */
+
+/* Start Gallery */
+.gallery .container-fluid {
+  padding: 0;
+  overflow: hidden;
+}
+
+.gallery .single-gallery {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.gallery .single-gallery .big-img {
+  height: 690px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery .single-gallery .small-img {
+  height: 330px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery .row .gallery-img {
+  transform: scale(1.06);
+  transition: all 0.5s ease;
+}
+
+.gallery .row .gallery-img:hover {
+  filter: brightness(0.6);
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+/* End Gallery */
+/* -------------------------------- */
+
+/* Start PopularItem */
+.populrItems {
+  padding: 30px 0;
+}
+
+.populrItems .hading {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.populrItems .hading h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 17px;
+  padding-top: 30px;
+}
+
+.populrItems .hading p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #777;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+
+.populrItems .box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.populrItems .watch {
+  position: relative;
+}
+
+.populrItems .watch img {
+  width: 100%;
+}
+
+.populrItems .watch i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+}
+
+.populrItems .watch a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff2020;
+  padding: 20px;
+}
+
+.populrItems .watch a {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.populrItems .watch i {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.populrItems .watch:hover i {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.populrItems .watch:hover a {
+  opacity: 1;
+  transition: all 0.5s ease;
+  padding-bottom: 20px;
+}
+
+.populrItems .box .text {
+  text-align: center;
+}
+
+.populrItems .box .text h3 {
+  padding-top: 20px;
+}
+
+.populrItems .box .text a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.populrItems .box .text p {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0 20px 0;
+}
+/* Start PopularItem */
+/* -------------------------------- */
+
+/* Start service */
+.service {
+  padding: 40px;
+}
+
+.service .container {
+  background-color: #ea0000;
+  padding: 10px 30px 0px 30px;
+}
+
+.service .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service .container .row .coulmn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.service .container .row i {
+  font-size: 40px;
+  color: #fff;
+  margin: 25px 0px;
+}
+
+.service .container .row h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.service .container .row p {
+  font-size: 16px;
+  color: #d3d3d3;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+/* End service */
+/* -------------------------------- */
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  header .container .row {
+    padding: 50px 0px;
+  }
+  header .container .row h1 {
+    font-size: 35px;
+  }
+  header .container .row img {
+    display: none;
+  }
+  .populrItems .heading h2 {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  header .container .row h1 {
+    font-size: 35px;
+  }
+  header .container .row img {
+    height: 400px;
+  }
+  header .container .box .text a {
+    font-size: 17px;
+  }
+}
